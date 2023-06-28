@@ -24,7 +24,7 @@ export const __dirname = path.dirname(__filename);
 import { connect } from 'mongoose';
 export async function connectMongo() {
   try {
-    await connect('mongodb+srv://guillermofergnani:DBeXuiDCQMqLyMTa@51380.yhqtnxt.mongodb.net/ecommerce?retryWrites=true&w=majority');
+    await connect('');
     console.log('plug to mongo');
   } catch (e) {
     console.log(e);

@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
   session({
-    store: MongoStore.create({ mongoUrl: 'mongodb+srv://guillermofergnani:DBeXuiDCQMqLyMTa@51380.yhqtnxt.mongodb.net/ecommerce?retryWrites=true&w=majority', ttl: 7200 }),
+    store: MongoStore.create({ mongoUrl: '', ttl: 7200 }),
     secret: 'un-re-secreto',
     resave: true,
     saveUninitialized: true,
